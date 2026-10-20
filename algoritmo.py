@@ -1,5 +1,4 @@
 # Password generator
-# Author: Cesare Francesco Gigliuto 
 # Author: Ciro Cozzolino
 # Version: 1.0
 
