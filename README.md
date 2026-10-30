@@ -1,4 +1,4 @@
-# Bruteforse 2.0
+# Bruteforce 2.0
 
 Dimostrazione Python di ricerca **brute force locale**, con generazione dei candidati, confronto con un bersaglio di prova, conteggio dei tentativi e misura del tempo effettivo.
 
