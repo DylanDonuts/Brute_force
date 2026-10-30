@@ -1,27 +1,12 @@
-import algoritmo as algo
-import pytest
+"""Avvio compatibile con il comando storico: python test.py.
 
-
-def testCreacampione() :
-    for i in range(100):
-        a = algo.get_random_string(i, algo.dictionary)
-        elements = 100 
-        campione = algo.creaCampione(a, elements)
-        
-        assert len(campione) == elements -1
-        for j in range(len(campione)) :
-            print("qui")
-            assert len(campione[j]) == i 
-
-
-def testGenerapassword():
-    for i in range(5, 1000):
-        pwd_a = algo.generapassword(i)
-        pwd_b = algo.generapassword(i)
-        assert pwd_a != pwd_b
-        assert len(pwd_a) == i and len(pwd_b) == i
+I test correnti sono in tests/. Le copie ricevute restano in originali/.
+"""
+from pathlib import Path
+import unittest
 
 
 if __name__ == "__main__":
-    testCreacampione()
-    testGenerapassword()
+    suite = unittest.defaultTestLoader.discover(str(Path(__file__).parent / "tests"))
+    result = unittest.TextTestRunner(verbosity=2).run(suite)
+    raise SystemExit(0 if result.wasSuccessful() else 1)

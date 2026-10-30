@@ -1,0 +1,7 @@
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+# Il PDF personale deve restare fuori dalla cartella pubblica.
+privato/
+*PERSONALE*.pdf
